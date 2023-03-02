@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+*{
+box-sizing: border-box;
+font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 0.5px;
+font-weight: 400;
+overflow-x: hidden;
+}
+
+
+nav .nav-ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    }
+    /*code for Navigation menu*/
+.menu-section{
+        position: fixed;
+        top: 0;  
+        z-index: 9999; 
+        width: 100%;
+        
+    }
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    background-color: var(--white-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    
+.nav-img{
+        float: left;
+        position: absolute;
+        left: 350px;
+    }
+ li a{
+        color: var(--black-color);
+        text-decoration: none;
+        padding: 10px 5px;
+        font-size: 0.87rem;
+        font-weight: bold;  
+        text-transform: uppercase; 
+    }
+ a:hover{
+        transition: .5s;
+        color: #0f17a1;
+    }
+    /*Nav menu ends here */
+#home-section{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    }
+#home-section h1{
+    color: #fff;
+    font-size: 2rem;
+}
+#home-section button{
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    border: none;
+}
+.section-container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+.container{
+        display: flex;
+      }
+.inner-section{
+    text-align: center;
+}
+.home{
+    background: url(https://images.unsplash.com/photo-1595144780677-6d0b5abbd089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FrZSUyMHNob3B8ZW58MHx8MHx8&w=1000&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: -5;
+    height: 700px;
+    
+    }
+    
+.home::before{
+    background: rgb(13, 13, 13);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -2;
+    }
+    
+
+    /* about */
+
+    .about-area{
+        display: flex;
+        width: 80%;
+    }
+    .about p{
+        max-width: 60%;
+    }
+    .about img{
+        width: 700px;
+        margin-top: 3rem;
+    }
