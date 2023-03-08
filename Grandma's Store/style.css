@@ -152,7 +152,10 @@ nav .nav-ul li{
     margin-top: 3rem;
     z-index: -900;
    }
-/*    
+   
+   .active{
+    display: none;
+   }
  .hover-state::after{
     content : "";
     position: absolute;
@@ -163,8 +166,9 @@ nav .nav-ul li{
     margin-top: 3rem;
     z-index: -900;
     left: 0;
-    visibility: hidden;
- } */
+    bottom: 0.4rem;
+
+ }
    .btn{
     padding: 10px 30px;
     font-size: 1.2rem;
@@ -232,16 +236,19 @@ nav .nav-ul li{
         width: 60%;
         margin: auto;
         gap: 2rem;
+        position: relative;
         column-gap: 4rem;
     }
     .store-images img{
         width: 100%;
         height: auto;
         overflow: hidden;
+        z-index: 10;
     }
     .cookies-img:hover{
-      transform: scale(1.2);
-      transition: all ease-in-out .4s;
+      transform: scale(1.15);
+      transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+      overflow: hidden;
     }
 
     .img-card h1{
@@ -250,13 +257,16 @@ nav .nav-ul li{
         font-weight: 200;
 
     }
-    .img-card {
+.img-card {
     text-align: center;
     background-color: #fff;
     outline: none;
     box-shadow:  0px 5px 20px rgb(180, 159, 159);
     overflow: hidden;
+    height: 300px;
+    z-index: 1;
     }
+   
    .card-text h1{
     float: left;
    }
@@ -265,4 +275,6 @@ nav .nav-ul li{
    }
    .card-text{
      padding:  0px 15px;
+
    }
+   
