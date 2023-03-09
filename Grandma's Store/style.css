@@ -72,7 +72,6 @@ nav .nav-ul li{
 .home-header{
     color: #fff;
     font-size: 2rem;
-    font-style: italic;
 }
 
 #home-section button:hover{
@@ -126,7 +125,8 @@ nav .nav-ul li{
     }
     .about p{
         max-width: 60%;
-        font-style: italic;
+        font-size: 0.8rem;
+    
     }
     .about img{
         width: 500px;
@@ -196,7 +196,7 @@ nav .nav-ul li{
         width: 35rem;
         z-index: 999;
         outline-color: #7f85ed;
-        font-style: italic;
+    
     }
 
     .store h2{
@@ -214,7 +214,7 @@ nav .nav-ul li{
       border: 1px solid #000;
       background-color: #eeeaea;
       font-size: 0.9rem;
-      font-style: italic;
+
     }
     #btn-area button:hover{
         background-color: #000;
@@ -238,6 +238,7 @@ nav .nav-ul li{
         gap: 2rem;
         position: relative;
         column-gap: 4rem;
+    
     }
     .store-images img{
         width: 100%;
@@ -251,13 +252,13 @@ nav .nav-ul li{
       overflow: hidden;
     }
 
-    .img-card h1{
+    .main-text{
         font-style: italic;
         font-size: 1rem;
         font-weight: 200;
 
     }
-.img-card {
+#img-card {
     text-align: center;
     background-color: #fff;
     outline: none;
