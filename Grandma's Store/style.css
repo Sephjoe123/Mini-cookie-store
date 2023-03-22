@@ -6,6 +6,8 @@ font-family: 'Poppins';
 }
 html{
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 body{
 margin: 0;
@@ -22,7 +24,6 @@ overflow-x: hidden;
 nav .nav-ul li{
     display: inline-block;
     font-size: 1.6rem;
-    font-style: italic;
     }
     /*code for Navigation menu*/
 .menu-section{
@@ -230,52 +231,39 @@ nav .nav-ul li{
         position: absolute;
         margin-left: -2.9rem;
     }
-    .store-images{
+ 
+    /* store-section */
+
+    #store-area{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 60%;
-        margin: auto;
         gap: 2rem;
-        position: relative;
-        column-gap: 4rem;
+    }
+     .img-area{
+        overflow: hidden;
+     }
+    .img-area img{
+        max-width: 400px;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
     
     }
-    .store-images img{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        z-index: 10;
-    }
-    .cookies-img:hover{
-      transform: scale(1.15);
-      transition:  cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
-      overflow: hidden;
-    }
 
-    .main-text{
-        font-style: italic;
-        font-size: 1rem;
-        font-weight: 200;
-
+    .img-card{
+      position: relative;
     }
-#img-card {
-    text-align: center;
-    background-color: #fff;
-    outline: none;
-    box-shadow:  0px 5px 20px rgb(180, 159, 159);
-    overflow: hidden;
-    height: 300px;
-    z-index: 1;
+    #store-area h1, #store-area p{
+        font-size: 1.2rem;
+        font-weight: 100;
     }
-   
-   .card-text h1{
-    float: left;
-   }
-   .card-text p{
-    float: right;
-   }
-   .card-text{
-     padding:  0px 15px;
-
-   }
-   
+    .img-card span{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        margin-top: -1rem;
+        padding: 0px 30px;
+    }
+    .img-card img:hover{
+        transform: scale(1.2);
+        
+    }
